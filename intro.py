@@ -1,6 +1,7 @@
 print ('hello world')
-x = """hii this is dhruv's 
-hello this is multi line string
-"""
+x = """hii"""
 
 print (x)
+
+print (len(x))
+print(x[0:2])
