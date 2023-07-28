@@ -1,27 +1,23 @@
 #this iss direct printing
-print ('hello world')
+print("hello world my self dhruv@93")
 #generating and save in variable
-x = """hii"""
-yi = "dhruv"
-#direct print string
-print (x)
-
+x = "dhruv"
+y = "dhruv@93gmail.com"
+#direct print var string
+print ('Name = '+x)
 #check length of string
-y=len("helllo world")
-
+l=len(x)
 #print length of string by store in var
-print(y)
-
+print (l)
 #length direct print
-print (len(x))
-
+print (len('hello this is dhruv'))
 #index slice from string 
-print(x[0:2].upper())
-
+print ((y[:5])+(y[5])+(y[6:8])+(y[8:]))
 #format style with place holder string concate 
-zz = 'hello,{} {}'.format(x,yi)
-print(zz)
-
+print ("hi Myself {} and this is my gmail address {}".format(x,y))
 #f style of formating with placeholder variable concate
-z = f'{x},{yi[0].upper()}{yi[1:]} this is your python string'
-print(z)
+print (f"{x} hi")
+#uppercase and lower
+print (y.upper(),x[0].upper()+x[1:].lower())
+#count
+print(y.count("gmail.com"))
