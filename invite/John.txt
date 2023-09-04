@@ -1,0 +1,5 @@
+John:
+    hello,John
+    your invited for the celebration of company's 5th aniversary,
+    we feel with joy to invite you
+    

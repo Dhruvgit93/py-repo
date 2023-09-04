@@ -1,20 +1,22 @@
 import string
-count=0
-dict_word={}
+
 def word_frequency(paragraph):
     # Clean the paragraph by removing punctuation and converting to lowercase
-    # Split the paragraph into words
-    words=paragraph.split()
+    cleaned_paragraph = paragraph.lower().translate(str.maketrans('', '', string.punctuation))
+
+    # Split the cleaned paragraph into words
+    words = cleaned_paragraph.split()
+
     # Create a dictionary to store word frequencies
-    print(words)
+    word_freq_dict = {}
+
     # Iterate through the words, update the dictionary
     for word in words:
-        if word in words:
-            dict_word[word]=count+1
+        if word in word_freq_dict:
+            word_freq_dict[word] += 1
         else:
-            dict_word=word
-    # Sort the dictionary by frequency in descending order
-    
+            word_freq_dict[word] = 1
+
     return word_freq_dict
 
 # Get input paragraph from the user
